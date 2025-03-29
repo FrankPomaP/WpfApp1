@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.VentanaCursos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="VentanaCursos" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Height="440" Width="780">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <!-- Etiquetas -->
+        <Label Content="label:" Grid.Column="0" Grid.Row="0" FontSize="30" 
+               VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <Label Content="label:" Grid.Column="0" Grid.Row="1" FontSize="30" 
+               VerticalAlignment="Center" HorizontalAlignment="Right"/>
+
+        <!-- Cajas de Texto -->
+        <TextBox Grid.Column="1" Grid.Row="0" Background="Red" Height="50" Width="300" 
+                 VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Background="Red" Height="50" Width="300" 
+                 VerticalAlignment="Center" HorizontalAlignment="Left"/>
+
+        <!-- Botón centrado -->
+        <Button Content="Agregar" Grid.Column="1" Grid.Row="2" Click="Button_Click_2" 
+                Background="Yellow" Height="50" Width="200" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Grid>
+</Window>
